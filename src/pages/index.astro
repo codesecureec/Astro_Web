@@ -1,0 +1,64 @@
+---
+import Badge from '../components/Badge.astro';
+import SectionContainer from '../components/SectionContainer.astro';
+import Layout from '../layouts/Layout.astro';
+import SocialPill from '../components/SocialPill.astro';
+import LinkedInIcon from '../icons/LinkedInIcon.astro';
+import GitHubIcon from '../icons/GitHubIcon.astro';
+import XIcon from '../icons/XIcon.astro';
+import MailIcon from '../icons/MailIcon.astro';
+import Noticias from '../components/Noticias.astro';
+import Briefcase from '../icons/Briefcase.astro';
+import CodeIcon from '../icons/CodeIcon.astro';
+import Proyectos from '../components/Proyectos.astro';
+---
+
+<Layout title="DeiCS | Service Desk, Desarrollador Web, Experto en proteger la información y los sistemas de organizaciones contra amenazas digitales." description="Contrata a Angel Jiménez con mas de 10 años de experiencia en Service Desk, su destreza en Desarrollo Web y solido conocimiento en ciberseguridad es lo que busca tu empresa o negocio.">
+	<main class="px-4">
+		<SectionContainer class="py-44 pb-20">
+			<img class="rounded-full size-20 mb-6" src="../../public/angel_jimenez.png" alt="Logo de mi empresa">
+			<h1 class="text-gray-900 dark:text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10">
+				Hola, Soy DeiCS <a href="https://www.linkedin.com/in/adjimenezg" target="_blank" class="flex justify-center items-center"><Badge>a tu servicio.</Badge></a>
+			</h1>
+			<h2 class="text-xl lg:text-2xl text-balance max-w-[700px] text-black dark:text-white">
+				<span class="text-red-300/90">Service Desk,</span><span class="text-violet-400/90"> Desarrollador Web,</span><span class="text-blue-400/90">  Experto en proteger la información</span><span class="opacity-75">  y los sistemas de organizaciones contra amenazas digitales.</span>
+			</h2>
+
+			<h3 class="text-xl lg:text-xl text-wrap py-8 opacity-75">
+				DeiCS es un profesional de la informática con amplia experiencia en el campo de la ciberseguridad. Se ha desempeñado como service desk, brindando soporte técnico y asistencia a los usuarios de sistemas informáticos y redes. También tiene conocimientos de desarrollo web, utilizando diversos lenguajes de programación y herramientas para crear sitios web funcionales y atractivos. Su principal fortaleza es su capacidad para proteger la información y los sistemas de organizaciones contra amenazas digitales, aplicando medidas de seguridad, prevención y respuesta ante posibles ataques cibernéticos.
+			</h3>
+			<nav class="flex gap-4 mt-8 flex-wrap">
+				<SocialPill href="https://www.linkedin.com/in/adjimenezg">
+					<LinkedInIcon class="size-4 md:size-6" />
+					LinkedIn
+				</SocialPill>
+				<SocialPill href="https://twitter.com/codesecureec">
+					<XIcon class="size-4 md:size-6" />
+					LinkedIn
+				</SocialPill>
+				<SocialPill href="https://github.com/ideics">
+					<GitHubIcon class="size-4 md:size-6" />
+					LinkedIn
+				</SocialPill>
+				<SocialPill href="mailto:ajimenez@computerserviceec.com">
+					<MailIcon class="size-4 md:size-6" />
+					ajimenez@computerserviceec.com
+				</SocialPill>
+			</nav>
+		</SectionContainer>
+		<SectionContainer id="Experience">
+			<h2 class="text-2xl font-semibold mb-6 flex gap-x-2 items-center">
+				<Briefcase class="size-6" />
+				Experiencia laboral
+			</h2>
+			<Noticias />
+		</SectionContainer>
+		<SectionContainer id="Project">
+			<h2 class="text-2xl font-semibold mb-6 flex gap-x-2 items-center">
+				<CodeIcon class="size-6" />
+				Proyectos
+			</h2>
+			<Proyectos />
+		</SectionContainer>
+	</main>
+</Layout>

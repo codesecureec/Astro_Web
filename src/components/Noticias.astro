@@ -1,0 +1,30 @@
+---
+import NoticiasItems from "./NoticiasItems.astro";
+const NOTICIAS = [
+  {
+    title: "Creador de contenido en TikTok",
+    releaseDate: "Actualmente ...",
+    description: "Creado contenido para consientizar solo la vulnerabilidad de los datos personales en las redes sociales, aportar conocimiento en el mundo digital se vivimos y eliminar el alfabetismo digital.",
+    downloadLink: "https://www.tiktok.com/@code.secure"
+  },
+  {
+    title: "Soporte Tecnico",
+    releaseDate: "2012 a la actualidad",
+    description: "Soporte tecnico a equipo desktop, laptops, impresoras, monitores, redes, y mas. Manteimiento preventivo, correctivo, ensamble de equipos, instalacion de software, y mas.",
+  },
+  {
+    title: "Desarrollador Web",
+    releaseDate: "Agosto 2022 a la actualidad",
+    description: "He desarrollado sitios web para empresas, negocios, y personas. He utilizado tecnologias como HTML, CSS, JavaScript, Python, Django, Astro, TailwindCSS, y mas.",
+  }
+]
+---
+<ol class="relative border-s border-gray-200 dark:border-gray-700">
+  {
+    NOTICIAS.map(noticias => (
+      <li class="mb-10 ms-6">
+        <NoticiasItems {...noticias} />
+      </li>
+    ))
+  }
+</ol>
