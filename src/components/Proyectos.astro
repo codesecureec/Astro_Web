@@ -20,13 +20,11 @@ const PROJECTS = [
     title: 'Barbería Alura',
     description: 'Pagina web para una barbería donde solo se utiliza HTML y CSS',
     link: 'https://ideics.github.io/portafolio/',
-    image: {project_1},
+    image: "/project/project_1.webp",
     tags: [TAGS.HTML, TAGS.CSS]
     
   }
 ]
-import { Image } from 'astro:assets';
-import project_1 from '../assets/project/project_1.webp';
 ---
 
 {
@@ -44,7 +42,7 @@ PROJECTS.map(({image, title, description, link, tags }) => (
           </li>
         ))}
       </ul>
-      <Image class="rounded shadow-2xl shadow-white/10" src={project_1} alt={`Captura del proyecto ${title}`}/>
+      <img class="rounded shadow-2xl shadow-white/10" src={image} alt={`Captura del proyecto ${title}`}>
     </article>
   ))
 }
